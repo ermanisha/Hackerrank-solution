@@ -1,2 +1,2 @@
-# Hackerrank-solution
-My hackerrank solution to problems
+# coursera assignments
+
