@@ -15,3 +15,31 @@ print(sorted(di.items())
 #lst=sorted(lst,reverse=True)
 #for k,v in lst[:10]:
 #	print(k,v)
+
+      
+      ***** PY4E ASSIGNMENT ***********
+name = input("Enter file:")
+if len(name) < 1 : name = "mbox-short.txt"
+handle = open(name)
+di=dict()
+for line in handle:
+    line.strip()
+    if line.startswith('From '):
+        wd=line.split()
+        wd=wd[5].split(':')
+        di[wd[0]]=di.get(wd[0],0)+1
+
+lst=list()        
+for k,v in di.items():
+    lst.append((k,v))
+    lst.sort()
+for k,v in lst:
+    print(k,v)
+    
+                
+            
+        
+            
+        
+            
+    
