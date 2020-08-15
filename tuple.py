@@ -35,7 +35,50 @@ for k,v in di.items():
     lst.sort()
 for k,v in lst:
     print(k,v)
+   
+      
+      
+*******************************
+      """var1=5
+def some_func():
+	var2=6
+	print(var1,var2)
+	def some_inner_func():
+		var3=7
+		print(var1,var2,var3)
+	some_inner_func()
+print(var1)
+some_func()
+"""
+count=5
+def some_method():
+	global count
+	count=count+1
+	print(count)
+some_method()
+#******************************************
+class Difference:
+    def __init__(self, a):
+        self.__elements = a
     
+    def computeDifference(self):
+            self.maximumDifference = abs(max(self.__elements) - min(self.__elements)) 
+
+
+
+	
+
+# End of Difference class
+
+_ = input()
+a = [int(e) for e in input().split(' ')]
+
+d = Difference(a)
+d.computeDifference()
+
+print(d.maximumDifference)
+
+
                 
             
         
