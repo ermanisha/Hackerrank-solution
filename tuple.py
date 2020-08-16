@@ -77,9 +77,42 @@ d = Difference(a)
 d.computeDifference()
 
 print(d.maximumDifference)
+      
+      
+*******************************************
+# 2D array input technique 1
+ r=int(input("enter the number of rows "))
+c=int(input("entre the number of columns"))
+qui=[]
+for i in range(3):
+    qui.append(list(map(int,input().rstrip().split())))
 
-
-                
+print(qui)
+      
+# 2D array input technique 2
+      R = int(input("Enter the number of rows:")) 
+C = int(input("Enter the number of columns:")) 
+  
+# Initialize matrix 
+matrix = [] 
+print("Enter the entries rowwise:") 
+  
+# For user input 
+for i in range(R):          # A for loop for row entries 
+    a =[] 
+    for j in range(C):      # A for loop for column entries 
+         a.append(int(input())) 
+    matrix.append(a) 
+  
+# For printing the matrix 
+for i in range(R): 
+    for j in range(C): 
+        print(matrix[i][j], end = " ") 
+    print() 
+      
+      
+      
+    
             
         
             
